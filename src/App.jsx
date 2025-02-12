@@ -1,8 +1,12 @@
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import authService from './appwrite/auth'
 
 function App() {
   const [count, setCount] = useState(0)
-  console.log(import.meta.env.VITE_APPWRITE_URL)
+  const [loading, setLoading] = useState(true)
+  const dispatch = useDispatch()
+
   return (
     <>
       <div className=''>
