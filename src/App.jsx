@@ -25,7 +25,7 @@ function App() {
   return !loading ?
     (
       <div className='min-h-screen flex flex-wrap  content-between'>
-        <div className="w-full bg-red-500 item-center block">
+        <div className="w-full item-center block">
           <Header />
           <main>
            TODO: {/* <Outlet/> */}
